@@ -1,0 +1,9 @@
+{
+	"instance": [{
+		"name": "example-lmdb",
+		"levelup": {
+			"type": "lmdb",
+			"location": "lib/example.lmdb"
+		}
+	}]
+}

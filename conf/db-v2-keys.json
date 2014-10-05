@@ -1,0 +1,11 @@
+{
+	"instance": [{
+		"name": "v2-keys",
+		"prefix": "v2/keys",
+		"levelup": {
+			"type": "jsondown",
+			"db": "v2-keys",
+			"location": "lib/db-keys.json"
+		}
+	}]
+}

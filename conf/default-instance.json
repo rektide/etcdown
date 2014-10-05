@@ -1,0 +1,12 @@
+{
+	"instance": {
+		"levelup": {
+			"open": {
+				"createIfMissing": true,
+				"writeMap": true,
+				"sync": true,
+				"metaSync": false
+			}
+		}
+	}
+}
