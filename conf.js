@@ -16,6 +16,7 @@ if(!(defaultInstance instanceof Object) && defaultInstance.instance instanceof O
 	throw 'Unexpected default-instance'
 nconf.remove('default-instance')
 
+var _instances= {}
 var loadInstance= co(function*loadInstance(instance){
 	instance.prefix= instance.prefix|| instance.name
 
@@ -28,6 +29,7 @@ var loadInstance= co(function*loadInstance(instance){
 	if(err)
 		throw err
 	nconf.set(instance.name, instance)
+	_instances[instance.name] = instance
 })
 
 for(var i in envs){
@@ -49,5 +51,7 @@ for(var i in envs){
 	}
 	nconf.remove(env)
 }
+
+nconf.set('instance', _instances)
 
 module.exports= nconf

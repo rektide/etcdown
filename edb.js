@@ -1,4 +1,4 @@
-var _= require('lodash'),
+var _merge= require('lodash-node/modern'),
   Global= require('./global'),
   Resource= require('koa-resource-router')
 
@@ -28,7 +28,7 @@ module.exports = (function edb(db, name, opts){
 		var key= this.key.join(':')
 
 		// build response node of content
-		this.resNode= _.merge({}, this.body, { "createdIndex": index,
+		this.resNode= _merge({}, this.body, { "createdIndex": index,
 			"key": key,
 			"modifiedIndex": iter })
 
