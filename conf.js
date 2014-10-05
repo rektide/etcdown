@@ -53,5 +53,6 @@ for(var i in envs){
 }
 
 nconf.set('instance', _instances)
+nconf.set('PORT', nconf.get('PORT')||4001)
 
 module.exports= nconf

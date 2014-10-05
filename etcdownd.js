@@ -1,6 +1,6 @@
-var koa
+var koa;
 
-var app= module.exports= (function app=(app){
+var app= module.exports= (function app(app){
 	var haveApp = !!app
 	if(!app){
 		if(!koa)
@@ -13,8 +13,11 @@ var app= module.exports= (function app=(app){
 		  edb= require('./edb')(conf.db, conf.name)
 		app.use(edb)
 	}
-	if(!haveApp)
-		app.listen(conf.port)
+	if(!haveApp){
+		var port= conf.get('PORT')
+		console.log('start; port:',port)
+		app.listen(port)
+	}
 })
 
 if(require.main == module){

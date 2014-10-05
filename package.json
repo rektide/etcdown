@@ -2,10 +2,10 @@
 	"name": "etcdown",
 	"version": "1.0.0",
 	"description": "",
-	"main": "etcdown.js",
+	"main": "node --harmony etcdownd.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
-		"etcdownd": "etcdownd.js"
+		"etcdownd": "node --harmony etcdownd.js"
 	},
 	"author": "",
 	"license": "X",
