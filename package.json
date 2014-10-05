@@ -1,0 +1,22 @@
+{
+	"name": "etcdown",
+	"version": "1.0.0",
+	"description": "",
+	"main": "etcdown.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"etcdownd": "etcdownd.js"
+	},
+	"author": "",
+	"license": "X",
+	"dependencies": {
+		"jsondown": "^0.1.1",
+		"koa": "^0.12.2",
+		"koa-resource-router": "^0.3.3",
+		"koa-router": "^3.4.0",
+		"koa-spdy": "^0.1.0",
+		"koa-spdy-push": "^0.3.2",
+		"lodash": "^2.4.1",
+		"nconf": "^0.6.9"
+	}
+}
